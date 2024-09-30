@@ -2,7 +2,7 @@
 import wollok.game.*
 
 object lionel {
-	
+	const balon = pelota
 	var property position = game.at(3,5)
 	
 	method image() {
@@ -19,6 +19,10 @@ object lionel {
 
 	method inicio() {
 		position = game.at(0,5)
+	}
+	
+	method buscarla(){
+		position = balon.position()
 	}
 	
 }
