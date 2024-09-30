@@ -17,6 +17,10 @@ object lionel {
 		position = game.at((game.width() - 1).min(position.x() + 1), position.y()) 
 	}
 
+	method inicio() {
+		position = game.at(0,5)
+	}
+	
 	method buscarla(){
 		position = balon.position()
 	}
